@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MobileMenu from './MobileMenu'
 import tomyalogo from "../assets/brand.svg"
+import profileSvg from "../assets/profile.svg"
+import { FaBars } from "react-icons/fa"
+import { IoMdClose } from "react-icons/io"
+import { Fade as Hamburger } from 'hamburger-react'
 
 const Header = () => {
+  const [mobileMenu, setMobileMenu] = useState(false)
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <div className="bg-gradient-to-r from-[#544EDA] to-[#3E39A7] text-white">
-      <div className="container mx-auto flex justify-between py-10 items-center">
+      <div className="lg:container mx-auto flex justify-between lg:py-10 p-2 items-center">
           <a href="/" className='basis-1/4'>
-            <img src={tomyalogo} alt="tomya-logo" className="w-36 invert"/>
+            <img src={tomyalogo} alt="tomya-logo" className="min-w-[147px] max-w-[147px] invert"/>
           </a>
-            <ul className='flex items-center justify-between bg-[#5952e4] rounded-lg py-2 px-6 text-sm basis-3/4 navbar'>
+            <ul className='lg:flex hidden items-center justify-between bg-[#5952e4] rounded-lg py-2 px-6 text-sm lg:basis-3/4 gap-4'>
                 <li className='cursor-pointer'>Kripto Paralar</li>
                 <li className='cursor-pointer'>Market</li>
                 <li className='cursor-pointer'>Komisyonlar</li>
@@ -18,13 +26,24 @@ const Header = () => {
                 <li className='cursor-pointer'>İletişim</li>
                 <li className='cursor-pointer'>Blog</li>
                 <li className='cursor-pointer'>
-                    <button className='border rounded-3xl py-1 px-3'>
+                    <button className='border rounded-[15px] py-1 px-3'>
                         Giriş Yap
                     </button>
                 </li>
                 <li>Kayıt Ol</li>
             </ul>
+            <div className='lg:hidden flex gap-3 items-center'>
+              <a href="/" className='absolute right-16'>
+               <img src={profileSvg} alt="tomya-logo" className="w-5 invert"/>
+              </a>
+              <button className={`bg-[#4d47c7] rounded-[10px] z-30 ${mobileMenu && 'fixed'} right-2`} onClick={() => setMobileMenu(current => !current)}>
+                 <Hamburger toggled={isOpen} toggle={setOpen} size={20} distance='lg' direction='right'/>
+              </button>
+            </div>
       </div>
+      {
+        mobileMenu && <MobileMenu/>
+      }
     </div>
   )
 }
