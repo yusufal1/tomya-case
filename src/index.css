@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .navbar:hover li {
   opacity: 0.5;
 }
 
 .navbar li:hover {
   opacity: 1;
+}
+
+.boxShadow {
+  -webkit-box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
+-moz-box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
+box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
 }

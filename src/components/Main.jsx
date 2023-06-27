@@ -10,12 +10,12 @@ const Main = () => {
           className="absolute"
         />
       </div>
-      <div className="h-[400px] bg-gradient-to-r from-[#544EDA] to-[#3E39A7]">
+      <div className="sm:h-[400px] h-[500px] bg-gradient-to-r from-[#544EDA] to-[#3E39A7]">
         <div className="container mx-auto flex lg:flex-row flex-col-reverse text-white relative">
           <img
             src={require("../assets/aboutus-banner.png")}
             alt="banner"
-            className="w-auto h-[677px] relative object-contain"
+            className="w-auto h-[677px] relative object-contain sm:bottom-0 bottom-36"
           />
           <div className="flex flex-col gap-y-5 lg:mt-28 mt-10 lg:px-0 md:px-10 px-4">
             <h1 className="lg:text-[3.375rem] text-[32px] lg:text-left text-center font-bold leading-none ">
