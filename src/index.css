@@ -15,3 +15,7 @@
 -moz-box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
 box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
 }
+
+.subTitle {
+  @apply md:text-4xl text-2xl font-medium;
+}
