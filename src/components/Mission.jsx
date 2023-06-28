@@ -9,7 +9,7 @@ const Mission = () => {
           alt=""
           className="lg:w-[632px] w-[440px]"
         />
-        <div className="flex flex-col gap-3 mt-10">
+        <div className="flex flex-col gap-3 mt-10 mx-2">
           <h2 className="font-medium md:text-4xl text-2xl">Hizmet Misyonumuz</h2>
           <ul className="list-disc ml-5 md:text-lg text-sm flex flex-col gap-y-3">
             <li>Güçlü takım ve işbirliği ile tam hizmet</li>

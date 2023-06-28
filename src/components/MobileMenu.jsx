@@ -2,7 +2,7 @@ import React from 'react'
 
 const MobileMenu = () => {
   return (
-    <div className='h-full bg-secondary w-[350px] fixed top-0 right-0 z-20'>
+    <div className='h-full bg-secondary w-[350px] fixed top-0 right-0 z-40'>
         <ul className='flex flex-col gap-3 text-[#24242a] text-[25px] font-medium mt-20 px-10'>
             <li><a href="/">Kripto Paralar</a></li>
             <li><a href="/">Market</a></li>

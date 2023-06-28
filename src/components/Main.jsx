@@ -10,14 +10,14 @@ const Main = () => {
           className="absolute"
         />
       </div>
-      <div className="sm:h-[400px] h-[500px] bg-gradient-to-r from-[#544EDA] to-[#3E39A7]">
+      <div className="sm:h-[550px] h-[500px] bg-gradient-to-r from-[#544EDA] to-[#3E39A7]">
         <div className="container mx-auto flex lg:flex-row flex-col-reverse text-white relative">
           <img
             src={require("../assets/aboutus-banner.png")}
             alt="banner"
-            className="w-auto h-[677px] relative object-contain sm:bottom-0 bottom-36"
+            className="w-auto h-[677px] relative object-contain sm:-bottom-20 bottom-36"
           />
-          <div className="flex flex-col gap-y-5 lg:mt-28 mt-10 lg:px-0 md:px-10 px-4">
+          <div className="flex flex-col gap-y-5 lg:mt-56 mt-20 lg:px-0 md:px-10 px-4">
             <h1 className="lg:text-[3.375rem] text-[32px] lg:text-left text-center font-bold leading-none ">
               TOMYA; kripto para almanın hızlı ve kolay yoludur.
             </h1>
