@@ -87,6 +87,7 @@ const Footer = () => {
   const handleItemClick = (itemId) => {
     setActiveItem((prevItem) => (prevItem === itemId ? null : itemId));
   };
+  
 
   return (
     <div className="bg-[#131416]">
@@ -98,7 +99,7 @@ const Footer = () => {
               onClick={() => handleItemClick(1)}
             >
               <h6 className="font-medium text-sm">Kurumsal</h6>
-              <FiChevronDown size={25} className="lg:hidden block" />
+              <FiChevronDown size={25} className={`lg:hidden block ${activeItem === 1 ? "transform rotate-180 transition-all duration-300 text-primary": "transform transition-all duration-300"}`} />
             </div>
             <ul
               className={`text-sm text-white mt-5 lg:flex flex-col gap-y-3 ${
@@ -144,7 +145,7 @@ const Footer = () => {
               onClick={() => handleItemClick(2)}
             >
               <h6 className="font-medium text-sm">Kullanıcılar İçin</h6>
-              <FiChevronDown size={25} className="lg:hidden block" />
+              <FiChevronDown size={25} className={`lg:hidden block ${activeItem === 2 ? "transform rotate-180 transition-all duration-300 text-primary": "transform transition-all duration-300"}`} />
             </div>
             <ul
               className={`text-sm text-white mt-5 lg:flex flex-col gap-y-3  ${
@@ -209,7 +210,7 @@ const Footer = () => {
               onClick={() => handleItemClick(3)}
             >
               <h6 className="font-medium text-sm">Kripto Paralar</h6>
-              <FiChevronDown size={25} className="lg:hidden block" />
+              <FiChevronDown size={25} className={`lg:hidden block ${activeItem === 3 ? "transform rotate-180 transition-all duration-300 text-primary": "transform transition-all duration-300"}`} />
             </div>
             <div className={`flex lg:flex-row flex-col gap-x-8`}>
               <ul
@@ -246,7 +247,7 @@ const Footer = () => {
               onClick={() => handleItemClick(4)}
             >
               <h6 className="font-medium text-sm">Rehber</h6>
-              <FiChevronDown size={25} className="lg:hidden block" />
+              <FiChevronDown size={25} className={`lg:hidden block ${activeItem === 4 ? "transform rotate-180 transition-all duration-300 text-primary": "transform transition-all duration-300"}`} />
             </div>
             <div className={`flex lg:flex-row flex-col gap-x-8`}>
               <ul
