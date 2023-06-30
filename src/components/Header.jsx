@@ -27,7 +27,7 @@ const Header = () => {
     <div className="bg-gradient-to-r from-[#544EDA] to-[#3E39A7] text-white">
       <div className="fixed top-0 left-0 w-full z-50">
         <div
-          className={`lg:container flex justify-between mx-auto items-center rounded-lg px-2 ${
+          className={`sm:container flex justify-between sm:mx-auto mx-4 items-center rounded-lg px-2 ${
             scrollPosition > 0 && !mobileMenu
               ? "mt-0 bg-[#5952e4] mx-4 py-1 translate-y-0 transition-all duration-300"
               : "mt-5 mx-auto translate-y-0 transition-all duration-300"
