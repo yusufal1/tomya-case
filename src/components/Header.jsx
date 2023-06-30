@@ -27,7 +27,7 @@ const Header = () => {
     <div className="bg-gradient-to-r from-[#544EDA] to-[#3E39A7] text-white">
       <div className="fixed top-0 left-0 w-full z-50">
         <div
-          className={`lg:container mt-5 flex justify-between mx-auto items-center rounded-lg px-2 ${
+          className={`lg:container flex justify-between mx-auto items-center rounded-lg px-2 ${
             scrollPosition > 0 && !mobileMenu
               ? "mt-0 bg-[#5952e4] mx-4 py-1 translate-y-0 transition-all duration-300"
               : "mt-5 mx-auto translate-y-0 transition-all duration-300"
@@ -40,7 +40,7 @@ const Header = () => {
               className="min-w-[147px] max-w-[147px] invert"
             />
           </a>
-          <ul className="lg:flex hidden navbar items-center justify-between bg-[#5952e4] rounded-lg py-3 px-6 text-sm lg:basis-3/4 gap-4">
+          <ul className="lg:flex hidden navbar items-center justify-between bg-[#5952e4] rounded-lg py-3 px-6 text-sm lg:basis-3/4 gap-4 whitespace-nowrap">
             <li className="cursor-pointer">Kripto Paralar</li>
             <li className="cursor-pointer">Market</li>
             <li className="cursor-pointer">Komisyonlar</li>
